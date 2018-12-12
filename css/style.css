@@ -1,0 +1,175 @@
+.d-color-white {
+	color: #f3f3f3;
+}
+.to-top {
+	z-index: 10;
+	/*padding-top: 2.5vh;*/
+	/*height: 0px;*/
+	/*overflow: visible;*/
+	pointer-events: none;
+	background: none!important;
+}
+
+.title-size {
+	font-size: 7rem;
+}
+
+.d-absolute {
+	position: absolute;
+}
+
+.d-padding-1 {
+	padding: 2rem!important;
+}
+
+.title-middle {
+	text-align: center!important;
+/*	top: 40vh;
+	left: 0;
+	right: 0;*/
+}
+
+.d-near-bottom{
+	position: absolute;
+	bottom: 10vh;
+	left: 49vw;
+	z-index: 10;
+}
+
+.letter-spacing-15 {
+	letter-spacing: 15px;
+}
+
+.letter-spacing-12 {
+	letter-spacing: 12px;
+}
+
+.d-karla-font {
+	font-family: 'Karla', sans-serif;
+}
+
+.d-open-sans-font {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+
+/*.item img {
+  width: 100%;
+  height: auto
+}*/
+
+/*.carousel {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}*/
+
+/*.item img {
+  width: 100%;
+  height: auto
+}*/
+
+img {
+	max-height: 100vh!important;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*margin-top: -5vh;*/
+  z-index: 1;
+}
+
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  float: left;
+  width: 33%;
+  height: 10px;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+}
+
+ol.carousel-indicators li.active {
+  background: rgb(255, 255, 255);
+  opacity: .5;
+  transition-property: height;
+  transition-property: opacity;
+  transition-duration: .3s;
+}
+
+ol.carousel-indicators li.active:hover {
+  /*background: rgba(255, 255, 255, .75);*/
+  height: 20px;
+  opacity: .75;
+}
+
+a {
+	/*text-decoration: none!important;*/
+	color: white!important;
+}
+
+.side-arrow {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: .3s;
+}
+
+.side-arrow:hover {
+	opacity: .75; 
+}
+
+.spacer-17dot5 {
+	height: 17.5vh;
+}
+
+.spacer-5 {
+	height: 5vh;
+}
+
+/*.parent > .child{
+  float:left;
+  padding:10px;
+  background:#eee;
+  width: 150px;
+  height:100px;
+  margin:8px;
+  box-shadow: 0 1px 2px #334;
+  
+  -webkit-transition:1.8s;
+  transition:0.8s;
+}*/
+
+.parent:hover > .child {
+	opacity: .2;
+}
+
+.parent > .child:hover {
+	opacity: 1;
+}
