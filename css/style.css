@@ -12,6 +12,11 @@
 
 .title-size {
 	font-size: 7rem;
+  pointer-events: auto;
+}
+
+.d-link {
+  text-decoration: none!important;
 }
 
 .d-absolute {
@@ -30,10 +35,18 @@
 }
 
 .d-near-bottom{
+  pointer-events: auto;
 	position: absolute;
-	bottom: 10vh;
+	bottom: 12vh;
 	left: 49vw;
-	z-index: 10;
+	z-index: 15;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: .3s;
+}
+
+.d-near-bottom:hover {
+  opacity: 1;
 }
 
 .letter-spacing-15 {
@@ -52,6 +65,10 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+.d-noto-font {
+  font-family: 'Noto Serif TC', serif;
+}
+
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -66,7 +83,34 @@
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
+.caption{
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: .75s;
+}
 
+.portfolio-text{
+  font-size: 2rem!important;
+  letter-spacing: 6px;
+}
+
+.caption:hover{
+  opacity: 1;
+}
+
+.portfolio-container{
+  text-align: center;
+}
+.caption-content {
+  /*display: flex;*/
+  margin-top: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.caption-content h2 {
+
+}
 
 /*.item img {
   width: 100%;
@@ -139,10 +183,17 @@ a {
 	opacity: 0;
 	transition-property: opacity;
 	transition-duration: .3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .side-arrow:hover {
 	opacity: .75; 
+}
+
+.arrow {
+  margin: auto;
 }
 
 .spacer-17dot5 {
@@ -151,6 +202,11 @@ a {
 
 .spacer-5 {
 	height: 5vh;
+}
+
+.spacer-1 {
+  min-height: 5vh;
+  visibility: none;
 }
 
 /*.parent > .child{
