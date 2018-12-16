@@ -89,9 +89,18 @@
   transition-duration: .75s;
 }
 
+.portfolio-text-header {
+  font-size: 1rem!important;
+  letter-spacing: 4px;
+}
+
 .portfolio-text{
   font-size: 2rem!important;
   letter-spacing: 6px;
+}
+
+.portfolio-description {
+  padding: 0 1rem;
 }
 
 .caption:hover{
@@ -228,4 +237,40 @@ a {
 
 .parent > .child:hover {
 	opacity: 1;
+}
+
+
+
+
+.flex-container {
+  display: flex!important;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+}
+
+.flex-row {
+  width: 23vw;
+ /* padding: 1rem;*/
+
+}
+
+.flex-row img {
+  flex-grow: 1;
+  flex-direction: column!important;
+  max-width: 23vw;
+  /*width: 33vw;*/
+  /*width: 100%;*/
+  padding: .5rem;
+}
+
+.flex-row > .text {
+  min-height: 25vh;
+
+}
+
+.text > span {
+  font-size: 1.25rem;
+  padding: 5rem;
+  display: inline-block;
 }

@@ -10,7 +10,7 @@
 }
 
 .flex-row {
-	width: 33vw;
+	width: 30vw;
 	padding: 1rem;
 
 }
@@ -18,8 +18,8 @@
 .flex-row > img {
 	flex-grow: 1;
 	flex-direction: column;
-	max-width: 33vw;
-	width: 33vw;
+	max-width: 30vw;
+	width: 30vw;
 	padding: 5rem;
 }
 
